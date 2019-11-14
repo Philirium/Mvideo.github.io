@@ -1,21 +1,745 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>MvideoMyShop</title>
-  <base href="/">
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>	
+	
+	<title>Egret - HTML5 landing page</title>
+	
+	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/linea-icon.css" />
+	<link rel="stylesheet" href="css/fancy-buttons.css" />
+	
+	<!--=== Google Fonts ===-->
+	<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<!--=== Other CSS files ===-->
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/jquery.vegas.css" />
+	<link rel="stylesheet" href="css/baraja.css" />
+	<link rel="stylesheet" href="css/jquery.bxslider.css" />
+	
+	<!--=== Main Stylesheets ===-->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	
+	<!--=== Color Scheme Stylesheets ===-->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <meta name="mobile-web-app-capable" content="yes">
-
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/schemes/red.css" disabled />
+	<link rel="stylesheet" href="css/schemes/orange.css" disabled />
+	<link rel="stylesheet" id="scheme-source" href="css/schemes/gray.css" />
+	
+	
+	<link rel="stylesheet" href="css/color-switcher.css" />
+	
+	<!--=== Internet explorer 8 fix ===-->
+	<!-- [if lt IE 9]>
+		<script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif] -->
+	
+	
 </head>
 <body>
-    <div class="indicators" style="width: 100%; height: 100%; background: #DFDFDF;">
-  <app-root></app-root>
-  </div>
-<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="es2015-polyfills.js" nomodule></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
+	
+<!-- Fb COde -->
+<!-- <div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=321345521337473&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script> -->
+
+
+	<!--=== Preloader section starts ===-->
+	<section id="preloader">
+		<div class="loading-circle fa-spin"></div>
+	</section>
+	<!--=== Preloader section Ends ===-->
+	
+	<!--=== Header section Starts ===-->
+	<div id="header" class="header-section">
+		<!-- sticky-bar Starts-->
+		<div class="sticky-bar-wrap">
+			<div class="sticky-section">
+				<div id="topbar-hold" class="nav-hold container">
+					<nav class="navbar" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+							</button>
+							<!--=== Site Name ===-->
+							<a class="site-name navbar-brand" href="#"><span>Г</span> КУ МО УКС</a>
+						</div>
+						
+						<!-- Main Navigation menu Starts -->
+						<div class="collapse navbar-collapse navbar-responsive-collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="current"><a href="#header">Упрвление</a></li>
+								<li><a href="#section-services">Наши Задачи</a></li>
+								<li><a href="#step-1">Наша работа</a></li>
+								<li><a href="#section-screenshots">Наши объекты</a></li>
+								<li><a href="#section-pricing">Руководство</a></li>
+								<li><a href="#section-contact">Связятся с нами</a></li>
+							</ul>
+						</div>
+						<!-- Main Navigation menu ends-->
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- sticky-bar Ends-->
+		<!--=== Header section Ends ===-->
+		
+		<!--=== Home Section Starts ===-->
+		<div id="section-home" class="home-section-wrap center">
+			<div class="section-overlay"></div>
+			<div class="container home">
+				<div class="row">
+					<h1 class="well-come">ГКУ МО "Управление капитального строительства"</h1>
+					
+					<div class="col-md-8 col-md-offset-2">
+						<p class="intro-message">Техническое обследование, оценка технического состояния объекта, зданий/конструкций, анализ качества и объемов выполненных работ.</p>
+						
+						<div class="home-buttons">
+							
+							
+						</div>
+					</div>
+					
+				<div class="well-come-label">
+
+					
+					
+						<img width="300px" height="600px" src="https://cdn1.savepice.ru/uploads/2019/11/14/3799f49d2c19c6c66e22fe9f493fb60e-full.png" alt="НЕТ КАРТИНКИ "> 
+					</div>
+				</div>
+				</div>
+
+			</div>
+		</div>
+		<!--=== Home Section Ends ===-->
+	</div>
+	
+	
+	<!--=== Features section Starts ===-->
+	
+	<!--=== Features section Ends ===-->
+	
+	<!--=== Services section Starts ===-->
+	<section id="section-services" class="services-wrap">
+		<div class="container services">
+			<div class="row">
+			
+				<div class="col-md-10 col-md-offset-1 center section-title">
+					<h3>Наши задачи</h3>
+				</div>
+			
+				<!-- Single Service Starts -->
+				<div class="col-md-6 col-sm-6 service animated" data-animation="fadeInLeft" data-animation-delay="700">
+					<span class="service-icon center"><i class="icon icon-basic-book-pencil fa-3x"></i></span>
+					<div class="service-desc">
+						<h4 class="service-title color-scheme">Анализ</h4>
+						<p class="service-description justify">
+							Анализ и оценка проекта по строительству объекта, включая оценку строительства и производства работ
+						</p>
+					</div>
+				</div>
+				<!-- Single Service Ends -->
+				
+				<!-- Single Service Starts -->
+				<div class="col-md-6 col-sm-6 service animated" data-animation="fadeInUp" data-animation-delay="700">
+					<span class="service-icon center"><i class="icon icon-basic-paperplane fa-3x"></i></span>
+					<div class="service-desc">
+						<h4 class="service-title color-scheme">Техническое обследование</h4>
+						<p class="service-description justify">
+							Оценка технического состояния объекта, зданий/конструкций, анализ качества и объемов выполненных работ.
+						</p>
+					</div>
+				</div>
+				<!-- Single Service ends -->
+				
+				<!-- Single Service Starts -->
+				<div class="col-md-6 col-sm-6 service animated" data-animation="fadeInRight" data-animation-delay="700">
+					<span class="service-icon center"><i class="icon icon-basic-accelerator fa-3x"></i></span>
+					<div class="service-desc">
+						<h4 class="service-title color-scheme">Мониторинг проекта</h4>
+						<p class="service-description justify">
+							Мониторинг проекта для подтверждения целевого использования заемных средств или возобновления кредитования в рамках услуг инспектора для банков. ониторинга строительства являются 
+							в основном объекты недвижимости и такие объекты строительства как производственные здания и сооружения, жилые дома и офисные здания.
+						</p>
+					</div>
+				</div>
+				<!-- Single Service Ends -->
+				
+				<!-- Single Service Starts -->
+				<div class="col-md-6 col-sm-6 service animated" data-animation="fadeInUp" data-animation-delay="700">
+					<span class="service-icon center"><i class="icon icon-basic-lightbulb fa-3x"></i></span>
+					<div class="service-desc">
+						<h4 class="service-title color-scheme">Строгий контроль </h4>
+						<p class="service-description justify">
+							Постоянный надзор за строительством объекта для поддержания высоких стандартов качества во время проведения работ 
+						</p>
+					</div>
+				</div>
+				<!-- Single Service Ends -->
+			</div>
+		</div>
+	</section>
+	<!--=== Services section Ends ===-->
+	
+	<!--=== Step-1 section Starts ===-->
+	<section id="step-1" class="section-step step-wrap">
+		<div class="container step animated" data-animation="bounceInLeft" data-animation-delay="700">
+			<div class="row">
+				<!-- Step Description Starts -->
+				<div class="col-md-8 step-desc">
+					<div class="col-md-2 center">
+						<div class="step-no">
+							<span class="no-inner">1</span>
+						</div>
+					</div>
+					
+					<div class="col-md-10 step-details">
+							<h3 class="step-title color-scheme"> Мы работаем быстро и красиво </h3>
+							<p class="step-description">Наша главная задача <strong>строгий контроль </strong>, за строительством объектов
+							по всей московской области </p>
+							
+							<ul class="sub-steps"> <!-- Sub steps here -->
+								<li>
+									<span class="icon fa fa-comments color-scheme"></span>
+									<span class="sub-text">Соообщить о нарушении </span>
+								</li>
+								<li>
+									<span class="icon fa fa-pencil-square-o color-scheme"></span>
+									<span class="sub-text">Посмотреть документы </span>
+								</li>
+							</ul>
+					</div> <!-- End step-details -->
+				</div>
+				<!-- Step Description Ends -->
+				<div class="col-md-4 step-img">
+					<img src="images/note.png" alt="" /> <!-- Step Photo Here -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Step-1 section Ends ===-->
+	
+	<!--=== Step-2 section Starts ===-->
+	<section id="step-2" class="section-step step-even step-wrap">
+		<div class="container step animated" data-animation="bounceInRight" data-animation-delay="700">
+			<div class="row">
+				<!-- Step Description Starts -->
+				<div class="col-md-8 step-desc">
+					<div class="col-md-2 center">
+						<div class="step-no">
+							<span class="no-inner">2</span>
+						</div>
+					</div>
+					
+					<div class="col-md-10 step-details">
+							<h3 class="step-title color-scheme">Наш штат сотрудников предоставляет только проверенную информацию</h3>
+							<p class="step-description">Скорость нашей работы на прямую завит от профессионализма работников штаба, которая подтверждается достижениями предприятия в области отбора кадров	/p>
+							
+							<ul class="sub-steps"> <!-- Sub steps here -->
+								<li>
+									<span class="icon fa fa-comments color-scheme"></span>
+									<span class="sub-text">Связаться с сотрудниками</span>
+								</li>
+								<li>
+									<span class="icon fa fa-pencil-square-o color-scheme"></span>
+									<span class="sub-text">Предложить проект</span>
+								</li>
+								
+							</ul>
+					</div><!-- End step-details -->
+				</div>
+				<!-- Step Description Ends -->
+				<div class="col-md-4 step-img">
+					<img src="images/desk.png" alt="" /> <!-- Step Photo Here -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Step-2 section Ends ===-->
+	
+	<!--=== Video section Starts ===-->
+	<!-- <section id="section-video" class="section-video-wrap">
+		<div class="section-overlay"></div>
+		<div class="container big-video center animated" data-animation="fadeInLeft" data-animation-delay="700">
+			<div class="row">
+				<div class="col-md-12 section-title">
+					<h3>Describe with a video</h3>
+				</div>
+				<div class="col-md-10 col-md-offset-1 video-content">
+					<iframe src="http://player.vimeo.com/video/75317749?title=0&amp;byline=0&amp;portrait=0" width="400" height="240"></iframe>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!--=== Video section Ends ===-->
+	
+	<!--=== ScreenShots section Starts ===-->
+	<section id="section-screenshots" class="screenshots-wrap">
+		<div class="container screenshots animated" data-animation="fadeInUp" data-animation-delay="1000">
+			<div class="row porfolio-container">
+				<div class="col-md-10 col-md-offset-1 center section-title">
+					<h3>Наши объекты</h3>
+				</div>
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/7.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Куровское</h4>
+							</div>
+							<span class="photo-zoom">
+								<a href="single-project.html" class="view-project"><i class="fa fa-search-plus fa-2x"></i></a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+				
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/2.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Анино</h4>
+							</div>
+							<span class="photo-zoom">
+								<a href="single-project-2.html" class="view-project"><i class="fa fa-search-plus fa-2x"></i></a>
+							</span>
+						</div>
+						
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+				
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/3.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Мытищи</h4>
+							</div>
+							<span class="photo-zoom">
+								<a href="single-project.html" class="view-project"><i class="fa fa-search-plus fa-2x"></i></a>
+							</span>
+						</div>
+						
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+				
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/4.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Лобня</h4>
+							</div>
+							<span class="photo-zoom">
+								<a href="single-project-2.html" class="view-project"><i class="fa fa-search-plus fa-2x"></i></a>
+							</span>
+						</div>
+						
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+				
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/5.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Дубна</h4>
+							</div>
+							<span class="photo-zoom">
+								<a href="single-project.html" class="view-project"><i class="fa fa-search-plus fa-2x"></i></a>
+							</span>
+						</div>
+						
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+				
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/6.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Сходня</h4>
+							</div>
+							<span class="photo-zoom">
+								<a href="single-project-2.html" class="view-project"><i class="fa fa-search-plus fa-2x"></i></a>
+							</span>
+						</div>
+						
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+				
+			</div>
+			
+			<div id="portfolio-loader" class="center">
+				<div class="loading-circle fa-spin"></div>
+			</div> <!--=== Portfolio loader ===-->
+			
+			<div id="portfolio-load"></div><!--=== ajax content will be loaded here ===-->
+			
+			<div class="col-md-12 center back-button">
+				<a class="backToProject fancy-button button-line bell btn-col" href="#">
+					Back
+					<span class="icon">
+						<i class="fa fa-arrow-left"></i>
+					</span>
+				</a>
+			</div><!--=== Single portfolio back button ===-->
+		</div>
+	</section>
+	<!--=== ScreenShots section Ends ===-->
+	
+	<!--=== Testimonials section Starts ===-->
+	
+	<!--=== Testimonials section Ends ===-->
+	
+	
+	<!--=== Pricing section Starts ===-->
+	<section id="section-pricing" class="pricing-wrap">
+		<div class="container pricing">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 center section-title">
+					<h3>Наше Руководство</h3>
+				</div>
+				<!-- Single Price Starts -->
+				<div class="col-md-3 col-sm-6 single-pricing-wrap center animated" data-animation="bounceInLeft" data-animation-delay="900">
+					<div class="single-pricing">
+					
+						<div class="pricing-head">
+							<h4 class="pricing-heading color-scheme">Виталий Петрунин</h4>
+							<div class="price">
+								<h3>
+									<span class="dollar"></span>
+									
+									<span class="month">Директор</span>
+								</h3>
+							</div>
+						</div>
+						
+						<ul class="package-features">
+							
+						</ul>
+						<div class="sign-up">
+							<a href="#" class="fancy-button button-line btn-col rotate">
+								Связаться
+								<span class="icon">
+									<i class="fa fa-thumbs-o-up"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Single Price Ends -->
+				
+				
+				<!-- Single Price Starts -->
+				<div class="col-md-3 col-sm-6 single-pricing-wrap center animated" data-animation="bounceInLeft" data-animation-delay="900">
+					<div class="single-pricing">
+					
+						<div class="pricing-head">
+							<h4 class="pricing-heading color-scheme">Наталья Загороднюк</h4>
+							<div class="price">
+								<h3>
+									<span class="dollar"></span>
+									
+									<span class="month">Управление закупками</span>
+								</h3>
+							</div>
+						</div>
+						
+						<ul class="package-features">
+							
+						</ul>
+						<div class="sign-up">
+							<a href="#" class="fancy-button button-line btn-col rotate">
+								Связаться
+								<span class="icon">
+									<i class="fa fa-thumbs-o-up"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Single Price Ends -->
+				
+				<!-- Single Price Starts -->
+				<div class="col-md-3 col-sm-6 single-pricing-wrap center animated" data-animation="bounceInLeft" data-animation-delay="900">
+					<div class="single-pricing">
+					
+						<div class="pricing-head">
+							<h4 class="pricing-heading color-scheme">Пташников Александор</h4>
+							<div class="price">
+								<h3>
+									<span class="dollar"></span>
+									
+									<span class="month">Заместитель директора </span>
+								</h3>
+							</div>
+						</div>
+						
+						<ul class="package-features">
+							
+						</ul>
+						<div class="sign-up">
+							<a href="#" class="fancy-button button-line btn-col rotate">
+								Связаться
+								<span class="icon">
+									<i class="fa fa-thumbs-o-up"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Single Price Ends -->
+				
+				<!-- Single Price Starts -->
+				<div class="col-md-3 col-sm-6 single-pricing-wrap center animated" data-animation="bounceInLeft" data-animation-delay="1100">
+					<div class="single-pricing">
+					
+						<div class="pricing-head">
+							<h4 class="pricing-heading color-scheme">Виталий Петрунин</h4>
+							<div class="price">
+								<h3>
+									<span class="dollar"></span>
+									
+									<span class="month">Генеральный директор </span>
+								</h3>
+							</div>
+						</div>
+						
+						
+						<div class="sign-up">
+							<a href="#" class="fancy-button button-line btn-col zoom">
+								Связаться
+								<span class="icon">
+									<i class="fa fa-thumbs-o-up"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Single Price Ends -->
+				
+			</div>
+		</div>
+	</section>
+	<!--=== Pricing section Ends ===-->
+	
+	<!--=== Subscribe section Starts ===-->
+	<section id="section-subscribe" class="subscribe-wrap">
+		<div class="section-overlay"></div>
+		<div class="container subscribe center">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="subscription-success"></p>
+					<p class="subscription-failed"></p>
+					<div class="col-md-10 col-md-offset-1 center section-title">
+						<h3>Новости нашей компании</h3>
+					</div>
+					<form id="subscription-form">
+						<input type="email" name="EMAIL" required="required" placeholder="Ваш email" class="input-email" />
+						<button type="submit" id="subscription-btn" class="fancy-button button-line button-white large zoom">
+							Оповещать об обновлениях	
+							<span class="icon">
+								<i class="fa fa-sign-in"></i>
+							</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Subscribe section Ends ===-->
+	
+	
+	<!--=== Download section Starts ===-->
+	<!-- <section id="section-download" class="download-wrap">
+		<div class="container download center">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="col-md-10 col-md-offset-1 center section-title">
+						<h3>Download app</h3>
+					</div>
+					<div class="download-buttons clearfix"> Download Buttons -->
+						<!-- <a class="fancy-button button-line no-text btn-col large zoom" href="#" title="Download from App store">
+							<span class="icon">
+							<i class="fa fa-apple"></i>
+							</span>
+						</a>
+						<a class="fancy-button button-line btn-col no-text large zoom" href="#" title="Download from App store">
+							<span class="icon">
+							<i class="fa fa-android"></i>
+							</span>
+						</a>
+						<a class="fancy-button button-line btn-col no-text large zoom" href="#" title="Download from App store">
+							<span class="icon">
+							<i class="fa fa-windows"></i>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> --> 
+	<!--=== Download section Ends ===-->
+	
+	
+	<!--=== Contact section Starts ===-->
+	<section id="section-contact" class="contact-wrap">
+	<div class="section-overlay"></div>
+		<div class="container contact center animated" data-animation="flipInY" data-animation-delay="1000">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-10 col-md-offset-1 center section-title">
+						<h3>Связаться с нами</h3>
+					</div>
+					
+					<div class="confirmation">
+						<p><span class="fa fa-check"></span></p>
+					</div>
+					
+					<form class="contact-form support-form">
+						
+						<div class="col-lg-12">
+							<input id="name" class="input-field form-item field-name" type="text" required="required" name="contact-name" placeholder="Имя" />
+
+							<input id="email" class="input-field form-item field-email" type="email" required="required" name="contact-email" placeholder="Email" />
+
+							<input id="subject" class="input-field form-item field-subject" type="text" required="required" name="contact-subject" placeholder="Тема" />
+							<textarea id="message" class="textarea-field form-item field-message" rows="10" name="contact-message" placeholder="Введите сообщение"></textarea>
+						</div>
+						<button type="submit" class="fancy-button button-line button-white large zoom subform">
+							Отправить сообщение
+							<span class="icon">
+								<i class="fa fa-paper-plane-o"></i>
+							</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Contact section Ends ===-->
+	
+	<!--=== Footer section Starts ===-->
+	<div id="section-footer" class="footer-wrap">
+		<div class="container footer center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h4 class="footer-title"><!-- Footer Title -->
+						<a class="site-name" href="#"><span>г</span> осударственное казенное учреждение управления контроля ща стоительтвом</a>
+					</h4>
+					
+					<!-- Social Links -->
+					<div class="social-icons">
+						<ul>
+							<li><a href="https://www.facebook.com/pages/Themegret/337546306439029"><i class="fa fa-facebook-square"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+							<li><a href="#"><i class="fa fa-flickr"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+						</ul>
+					</div>
+					
+					<p class="copyright">Поддержка и развитие ресурса: Филипп Арделян &copy; 2019</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--=== Footer section Ends ===-->
+
+	<!-- Fb popUp -->
+	
+	<!--=== Color Scheme section Starts ===-->
+	<!-- <section id="section-colors" class="color-panel panel-close center">
+		<div class="color-wrap">
+		<h3>Color schemes</h3>
+		<span class="fa fa-gears panel-ticker"></span>
+			<div class="pallet-row">
+				<a href="#" class="color-pallet color-red" title="red"></a>
+				<a href="#" class="color-pallet color-orange" title="orange"></a>
+				<a href="#" class="color-pallet color-gray" title="gray"></a>
+			</div>
+			<hr />
+			<p>Other Home styles coming soon</p>
+		</div>
+	</section> -->
+	<!--=== Color Scheme section Ends ===-->
+	
+<!--==== Js files ====-->
+<!--==== Essential files ====-->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+<!--==== Slider and Card style plugin ====-->
+<script type="text/javascript" src="js/jquery.baraja.js"></script>
+<script type="text/javascript" src="js/jquery.vegas.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+<!--==== MailChimp Widget plugin ====-->
+<!-- <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script> -->
+
+<!--==== Scroll and navigation plugins ====-->
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+
+<!--==== Custom Script files ====-->
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script type="text/javascript" src="js/color-switcher.js"></script>
+<script>
+	$(window).load(function() {
+		'use strict';
+		$('.fb-popup').delay(20000).fadeIn();
+		$('.fb-close').click(function() {
+			$('.fb-popup').fadeOut();
+		})
+	});
+</script>
+
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58786679-1', 'auto');
+  ga('send', 'pageview');
+</script> -->
+</body>
 </html>
